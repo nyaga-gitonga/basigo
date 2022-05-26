@@ -10,6 +10,9 @@ const Home= () => {
     const [token]=state.token
     const [isLogged]=state.userAPI.isLogged
 
+    console.log(isLogged)
+    console.log(token)
+
     return (
         <>
          {
@@ -20,8 +23,8 @@ const Home= () => {
             </div>
             </div>
 
-            :<div className="home">
-            <div className="home__body"><Sidebar /> <Body /></div></div>
+            :
+            <Login />
             }  
         </>
             
