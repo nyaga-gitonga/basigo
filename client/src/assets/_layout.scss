@@ -1,0 +1,130 @@
+.home__body{
+    display:flex;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+}
+.header__left{
+    flex:0.5;
+    min-width: 80px;
+    background-color: white;
+    color:grey;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.header__left > input{
+    border:none;
+    width:100%;
+    }
+.header__right > h4{
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar{
+
+    height:100vh;
+    flex:0.2;
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px ;
+    min-width: 230px;
+    height: 100vh;
+    background-color: #040404;
+}
+.sidebar__logo{
+    margin-right: auto;
+    height: 70px;
+    padding:10px;
+}
+.sidebar__title{
+margin-left:10px;
+    padding:5px;
+    font-size: 12px;
+}
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    color:grey;
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms color case-in;
+}
+.sidebar >hr{
+    border:1px solid #282828;
+    width:90%;
+    margin:10px auto
+}
+.sidebarOption:hover{
+    color: white;
+}
+.sidebarOption__icon{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sidebarOption > p {
+    margin-top:10px;
+    margin-left:20px;
+    font-size:14px;
+}
+.body{
+    padding:30px;
+    flex:0.8;
+    height: 100vh;
+    overflow-y: overlay;
+    color:white;
+    background: linear-gradient(transparent,rgb(91,87,115),rgba(0,0,0,1));
+}
+.body::-webkit-scrollbar{
+    display: none;
+}
+.body__info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+.body__info > img{
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0 4px 60px
+    rgba(0,0,0,0.5);
+}
+.body__infoText > p{
+    flex:1;
+}
+
+
+.login{
+    height:100vh;
+    background:#f8f8f8;
+    display:grid;
+    place-items: center;
+
+}
+.login_container{
+   padding:100px;
+    text-align: center;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.login__container > img {
+    object-fit: contain;
+    height: 100px;
+    margin-bottom: 40px;
+}
+.login__container > button{
+    margin-bottom: 50px;
+    text-transform: inherit !important;
+    background-color:#0a8d48;
+    color:white;
+}
+.login__container > input{
+    width: 100%;
+   
+}
