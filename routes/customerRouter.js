@@ -13,6 +13,6 @@ router.route('/lead')
 
  router.route('/customer')
  .get(auth,custCtrl.fetchCustomers)
- .post(auth,managerMiddleware,custCtrl.convertToCustomer)
+ .put(auth,managerMiddleware,custCtrl.convertToCustomer)
 
 module.exports = router;
