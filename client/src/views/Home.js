@@ -10,8 +10,8 @@ const Home= () => {
     const [token]=state.token
     const [isLogged]=state.userAPI.isLogged
 
-    console.log(isLogged)
-    console.log(token)
+    //console.log(isLogged)
+   // console.log(token)
 
     return (
         <>

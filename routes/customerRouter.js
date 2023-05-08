@@ -9,10 +9,11 @@ const managerMiddleware=require('../middleware/managerMiddleware')
 router.route('/lead')
  //.get(auth,custCtrl.fetchLeads)
  .get(custCtrl.fetchLeads)
+ .get(custCtrl.fetchCustomers)
  .post(auth,custCtrl.registerLead)
 
- router.route('/customer')
- .get(auth,custCtrl.fetchCustomers)
- .put(auth,managerMiddleware,custCtrl.convertToCustomer)
+ router.route('/customer/:id')
+ //.put(auth,managerMiddleware,custCtrl.convertToCustomer)
+ .put(custCtrl.convertToCustomer)
 
 module.exports = router;
